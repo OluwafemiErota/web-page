@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #444;
+}
+
+#profile {
+  align-items: center;
+  padding: 20px 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  width: 130%;
+  max-width: 550px;
+  border-radius: 10px;
+}
+
+#profile img {
+  margin-bottom: 20px;
+}
+
+
+#profile p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#goals, #links {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+#goals ul, #links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#goals li, #links li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+#links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+#current-time, #current-day {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  #profile {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #profile img {
+    margin-bottom: 0;
+  }
+
+  #profile div {
+    text-align: left;
+  }
+}
